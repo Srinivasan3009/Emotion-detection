@@ -25,6 +25,7 @@ emotion_detection_app/
 ├── README.md                    # Project documentation
 
 └── assets/
+
     └── sample.jpg   
     
 ## 🧠 Model Info
