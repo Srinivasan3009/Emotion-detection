@@ -45,7 +45,7 @@ emotion_detection_app/
 ## 🚀 How to Run
 
 ### Step 1: Clone the repository or set up your files
-  git clone https://github.com/Srinivasan3009/Emotion_detection.git
+  git clone https://github.com/Srinivasan3009/Emotion-detection.git
   cd emotion_detection_app
 ### Step 2:Install dependencies
   pip install -r requirements.txt
@@ -56,14 +56,14 @@ emotion_detection_app/
 ### Step 4: Run the app
   streamlit run emotion_app.py
 
- ###**Features**
+ ### Features
  
 Upload any image with one or more faces.
 Automatically detects faces and classifies their emotions.
 Displays annotated results with emotion labels.
 Lightweight and runs locally or on cloud platforms.
 
-###**Future Enhancements**
+### Future Enhancements
 
 Real-time webcam integration
 Support for multiple models (e.g., CNN, Vision Transformers)
