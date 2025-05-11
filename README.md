@@ -53,12 +53,16 @@ emotion_detection_app/
 
 ### Step 1: Clone the repository or set up your files
   git clone https://github.com/Srinivasan3009/Emotion-detection.git
+  
   cd emotion_detection_app
+  
 ### Step 2:Install dependencies
   pip install -r requirements.txt
 ### Step 3: Download the model
   import urllib.request
+  
   url = "https://github.com/oarriaga/face_classification/raw/master/trained_models/emotion_models/fer2013_mini_XCEPTION.102-0.66.hdf5"
+  
   urllib.request.urlretrieve(url, "emotion_model.h5")
 ### Step 4: Run the app
   streamlit run emotion_app.py
