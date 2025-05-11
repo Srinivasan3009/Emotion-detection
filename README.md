@@ -15,10 +15,15 @@ A simple Streamlit web app that detects human emotions from images using a pre-t
 emotion_detection_app/
 
 │
+
 ├── emotion_app.py               # Main Streamlit app file
+
 ├── emotion_model.h5             # Pretrained Mini-XCEPTION model (FER-2013)
+
 ├── requirements.txt             # Python dependencies
+
 ├── README.md                    # Project documentation
+
 └── assets/
     └── sample.jpg   
     
