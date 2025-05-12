@@ -1,33 +1,24 @@
-# 🎥 Multimodal Emotion Detection System
+# Multimodal Emotion Detection System
 
-This project implements a **Multimodal Emotion Detection System** that analyzes both **facial expressions** and **audio features** from video input to detect emotional states. It combines **computer vision**, **audio signal processing**, and **simple rule-based classification** to predict an overall emotion.
+This project implements a **Multimodal Emotion Detection System** that analyzes both facial expressions and audio features from video input to detect emotional states. It combines computer vision, audio signal processing, and simple rule-based classification to predict the overall emotion.
 
----
+## Features
+- **Facial Emotion Recognition**: Uses [DeepFace](https://github.com/serengil/deepface) to analyze sampled video frames.
+- **Audio Emotion Recognition**: Extracts and processes audio features (MFCC, ZCR, RMSE, etc.) via [librosa](https://librosa.org/).
+- **Multimodal Fusion**: Combines visual and vocal cues to provide robust emotion analysis.
+- **Interactive Visualizations**: Displays emotion-related charts using [matplotlib](https://matplotlib.org/).
+- **Google Colab Compatibility**: Easily works with video uploads in a Google Colab environment.
 
-## 🔍 Features
+## How It Works
+1. **Upload a Video File**: Upload a video file to Google Colab.
+2. **Facial Emotion Detection**: Extract facial frames and detect the dominant emotion using DeepFace.
+3. **Audio Emotion Analysis**: Extract audio from the video and analyze it using spectral features.
+4. **Classify Audio Emotion**: Classify the audio emotion based on energy levels and ZCR (Zero Crossing Rate).
+5. **Multimodal Fusion**: Combine visual and audio data to compute the final emotion.
+6. **Visualize Results**: Generate informative visualizations, including bar charts and audio spectrograms.
 
-- **Facial Emotion Recognition** using DeepFace on sampled video frames.
-- **Audio Emotion Recognition** using MFCC, ZCR, RMSE, and other features via `librosa`.
-- **Multimodal Fusion** logic to combine visual and vocal cues for robust emotion analysis.
-- **Interactive Visualizations** using `matplotlib` for both audio and facial emotion insights.
-- Works with video uploads in a **Google Colab** environment.
-
----
-
-## 🧠 How It Works
-
-1. **Upload a video file** via Google Colab.
-2. **Extract facial frames** and detect dominant emotions using DeepFace.
-3. **Extract audio** from the video and analyze it using spectral features.
-4. **Classify audio emotion** using simple thresholds on energy and ZCR.
-5. **Fuse visual and audio insights** to determine a final emotion.
-6. **Visualize** both intermediate and final results with charts.
-
----
-
-## 📁 Requirements
-
-- Python 3.x  
+## Requirements
+- **Python 3.x**
 - Libraries:
   - `opencv-python`
   - `librosa`
@@ -35,43 +26,42 @@ This project implements a **Multimodal Emotion Detection System** that analyzes 
   - `moviepy`
   - `matplotlib`
   - `numpy`
-  - `google.colab` (for file upload in Colab)
+  - `google.colab` (for file uploads in Colab)
   - `IPython.display`
 
----
+## Getting Started
+For the best experience, run this project in Google Colab.
 
-## 🚀 Getting Started
+### Steps to Run:
+1. Clone or upload the script to Google Colab.
+2. Import and run the analysis:
+   ```python
+   from your_script_name import MultimodalEmotionDetector
 
-Run this notebook in **Google Colab** for best compatibility.
-
-```python
-# Clone or upload the script, then run:
-from your_script_name import MultimodalEmotionDetector
-
-detector = MultimodalEmotionDetector()
-detector.run_analysis()
-```
+   detector = MultimodalEmotionDetector()
+   detector.run_analysis()
 
 > ⚠️ Note: DeepFace uses pre-trained models and may require initial downloads.
 
 ---
 
 ## 📊 Output
+Dominant Facial Emotions: Visualized across video frames.
 
-- Dominant facial emotions over frames
-- Classified audio emotion
-- Final fused emotion
-- Bar charts and audio spectrograms
+Classified Audio Emotion: Based on extracted audio features.
 
----
+Final Fused Emotion: Combined results from visual and audio cues.
 
-## 📌 Use Case
+Visuals: Includes bar charts and audio spectrograms.
 
-This is an ideal tool for research or academic projects in:
-- Affective computing
-- Human-computer interaction
-- Behavioral analysis
+## Use Cases
+This tool is ideal for research and academic projects in areas such as:
 
+Affective computing
+
+Human-computer interaction
+
+Behavioral analysis
 ---
 
 ## 📄 License
